@@ -15,7 +15,7 @@ const Navbar = () => {
         <li className='p-3'>Despre</li>
         <li className='p-3'>Galerie</li>
         <li className='p-3'>Contact</li>
-        <li className='p-3'>LogIn</li>
+        <li className='p-3'>Log In</li>
         <li className='p-3'>Creare cont</li>
       </ul>
       <div onClick={handleNav} className='block md:hidden'>
@@ -28,7 +28,7 @@ const Navbar = () => {
           <li className='p-3 border-b border-[#5C5C5C]'>Abonamente</li>
           <li className='p-3 border-b border-[#5C5C5C]'>Despre</li>
           <li className='p-3 border-b border-[#5C5C5C]'>Galerie</li>
-          <li className='p-3 border-b border-[#5C5C5C]'>LogIn</li>
+          <li className='p-3 border-b border-[#5C5C5C]'>Log In</li>
           <li className='p-3 border-b border-[#5C5C5C]'>Creare cont</li>
           <li className='p-3'>Contact</li>
         </ul>
