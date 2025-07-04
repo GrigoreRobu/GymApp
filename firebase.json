@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "GymApp",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
