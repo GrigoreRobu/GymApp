@@ -124,7 +124,7 @@ const Navbar = () => {
       {showRegister && (
         <div className="fixed inset-0 bg-gray-950/75 flex items-center justify-center z-10">
           <div className="bg-[#3A3A3A] p-6 rounded-lg w-full max-w-md mx-4">
-            <h2 className="text-2xl font-bold  mb-4">Creare cont</h2>
+            <h2 className="flex justify-center text-2xl font-bold  mb-4">Creare cont</h2>
             <form className="space-y-4">
               <div>
                 <label className="block  font-bold mb-2">Email</label>
