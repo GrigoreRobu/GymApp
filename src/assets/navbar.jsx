@@ -364,7 +364,7 @@ const Navbar = () => {
                   value={registerData.password}
                   onChange={(e) => setRegisterData({ ...registerData, password: e.target.value })}
                   placeholder="Creaza o parola sigura"
-                  className="w-full p-3 bg-gray-700 border border-gray-600 rounded text-white focus:border-green-500 focus:outline-none"
+                  className="w-full p-3 bg-gray-700 border border-gray-600 rounded text-white focus:border-green-500"
                   required
                 />
               </div>
@@ -375,7 +375,7 @@ const Navbar = () => {
                   value={registerData.confirmPassword}
                   onChange={(e) => setRegisterData({ ...registerData, confirmPassword: e.target.value })}
                   placeholder="Reintrodu parola pentru confirmare"
-                  className="w-full p-3 bg-gray-700 border border-gray-600 rounded text-white focus:border-green-500 focus:outline-none"
+                  className="w-full p-3 bg-gray-700 border border-gray-600 rounded text-white focus:border-green-500"
                   required
                 />
               </div>
