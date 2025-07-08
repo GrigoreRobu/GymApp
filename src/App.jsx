@@ -7,6 +7,7 @@ import Despre from './pages/Despre.jsx';
 import Galerie from './pages/Galerie.jsx';
 import Navbar from "./assets/navbar.jsx";
 import Footer from "./assets/footer.jsx";
+import Cont from "./pages/Cont.jsx";
 
 function App() {
   return (
@@ -18,7 +19,8 @@ function App() {
           <Route path="/abonamente" element={<Abonamente />} />   
           <Route path="/contact" element={<Contact/>} />   
           <Route path="/despre" element={<Despre />} />   
-          <Route path="/galerie" element={<Galerie />} />       
+          <Route path="/galerie" element={<Galerie />} />      
+          <Route path='/cont' element={<Cont/>}/>
         </Routes>
       </main>
       <Footer/>
