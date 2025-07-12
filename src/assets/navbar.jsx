@@ -163,7 +163,6 @@ const Navbar = () => {
   return (
     <div className="text-white bg-[#3A3A3A] flex justify-between items-center">
       <h1 className="text-green-600 text-3xl font-bold p-3"><Link to='/'>GymGrig</Link></h1>
-      <h1 className="text-green-600 text-3xl font-bold p-3"><Link to='/'>GymGrig</Link></h1>
       <ul className='hidden md:flex'>
         <li className='p-3'><Link to='/'>Acasa</Link></li>
         <li className='p-3'><Link to='/abonamente'>Abonamente</Link></li>
@@ -202,9 +201,7 @@ const Navbar = () => {
 
 
       {/*Meniu pt telefon*/}
-      <div className={nav ? 'fixed left-0 top-0 w-[60%] border-r border-r-gray-800 h-full bg-[#3A3A3A] z-10 ease-in-out duration-300' : 'fixed left-[-100%]'}
-      >
-        <h1 className="text-green-600 text-3xl font-bold p-3"><Link to='/'>GymGrig</Link></h1>
+      <div className={nav ? 'fixed left-0 top-0 w-[60%] border-r border-r-gray-800 h-full bg-[#3A3A3A] z-10 ease-in-out duration-300' : 'fixed left-[-100%]'}>
         <h1 className="text-green-600 text-3xl font-bold p-3"><Link to='/'>GymGrig</Link></h1>
         <ul className='uppercase'>
           <li className='p-3 border-b border-[#5C5C5C]' onClick={() => setNav(false)}>
@@ -227,7 +224,9 @@ const Navbar = () => {
           {user ? (
             <>
               <li className='p-3 border-b border-[#5C5C5C]'>
-                <span className="text-green-400">Conectat: {user.email}</span>
+                <button onClick={() => setNav(false)}>
+                  <Link to="/cont">Cont</Link>
+                </button>
               </li>
               <li className='p-3'>
                 <button onClick={() => { handleLogout(); setNav(false) }}>
@@ -254,8 +253,6 @@ const Navbar = () => {
         <div className="fixed text-xs sm:text-2xl inset-0 bg-gray-950/75 flex items-center justify-center z-50">
           <div className="bg-[#3A3A3A] max-w-[80%] md:max-w-md text-white p-6 rounded-lg w-full mx-4">
             <h2 className="flex justify-center text-2xl font-bold mb-4">Login</h2>
-
-            {/* Afisare erori */}
             {error && (
               <div className="bg-red-500/20 border border-red-500 text-red-300 px-4 py-2 rounded mb-4">
                 {error}

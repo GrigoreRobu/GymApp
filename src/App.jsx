@@ -7,7 +7,8 @@ import Despre from './pages/Despre.jsx';
 import Galerie from './pages/Galerie.jsx';
 import Navbar from "./assets/navbar.jsx";
 import Footer from "./assets/footer.jsx";
-import Cont from "./pages/Cont.jsx";
+import Cont from "./privat/cont.jsx";
+import Success from './pages/Success';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/despre" element={<Despre />} />   
           <Route path="/galerie" element={<Galerie />} />      
           <Route path='/cont' element={<Cont/>}/>
+          <Route path="/success" element={<Success />} />
         </Routes>
       </main>
       <Footer/>
